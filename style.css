@@ -1,0 +1,73 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+#content{
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width:100%;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: aliceblue;
+}
+#head{
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    margin: 0;
+    width: 75%;
+    height: 250px;
+}
+.banner{
+    margin-top: 0;
+    padding:0;
+    background-image: url("assets/ramenBanner2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    background-position:center;
+    height: 75%;
+}
+#head p{
+    font-size: 100px;
+    font-family: 'brush', sans-serif;
+    margin-top: 30px;
+    margin-left: 100px;
+
+}
+#navbar{
+    width:100%;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li button {
+    background-color: #333;
+    font-size: 15px;
+    border: black solid 1px;
+    outline: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+  }
+  
+  li button:hover {
+    background-color: #111;
+  }
+  li button:active{
+      filter:brightness(0.7);
+  }
