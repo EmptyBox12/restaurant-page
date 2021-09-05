@@ -1,5 +1,7 @@
 const content = document.querySelector("#content");
 
+import createHomePage from "./homePage";
+
 function createHead(){
     let homeLi = document.createElement("li");
     let menuLi = document.createElement("li");
@@ -42,8 +44,9 @@ function createHead(){
     head.appendChild(navBar);
     return head;
 }
-function render(){
-    content.appendChild(createHead());
+function start(){
+    render(createHead());
+    render(createHomePage());
     let buttons = document.querySelectorAll(".navButton");
     buttons.forEach((item)=>{
         item.addEventListener("click", ()=>{
@@ -52,5 +55,9 @@ function render(){
     });
     
 }
-render();
+function render(element){
+    content.appendChild(element);
 
+};
+
+start();

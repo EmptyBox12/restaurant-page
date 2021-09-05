@@ -9,7 +9,6 @@ html,body{
     flex-direction: column;
     height: 100%;
     width:100%;
-    justify-content: flex-start;
     align-items: center;
     background-color: aliceblue;
 }
@@ -19,7 +18,7 @@ html,body{
     padding:0;
     margin: 0;
     width: 75%;
-    height: 250px;
+    
 }
 .banner{
     margin-top: 0;
@@ -28,17 +27,18 @@ html,body{
     background-repeat: no-repeat;
     background-size: 100% 100%; 
     background-position:center;
-    height: 75%;
+    height: 100px;
 }
 #head p{
-    font-size: 100px;
+    font-size: 70px;
     font-family: 'brush', sans-serif;
-    margin-top: 30px;
+    margin-top: 7px;
     margin-left: 100px;
 
 }
 #navbar{
     width:100%;
+    margin-bottom: 0;
 
 }
 ul {
@@ -69,5 +69,32 @@ ul {
     background-color: #111;
   }
   li button:active{
-      filter:brightness(0.7);
+    filter:brightness(0.7);
+  }
+  #homePage{
+    width: 75%;
+    height:70%;
+   
+    
+  }
+  #homePageImage{
+    background-image: url("assets/ramen3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+    height: 100%;
+  }
+  #homePageText{
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-family:'brush', sans-serif;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 70%;
+    padding: 5px;
+    text-align: center;
   }
