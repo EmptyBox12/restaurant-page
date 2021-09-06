@@ -98,3 +98,12 @@ ul {
     padding: 5px;
     text-align: center;
   }
+  #menuPage{
+    width: 100%;
+    background-image: url("assets/ramenMenu.jpg");
+    background-position:center;
+    background-size:600px 650px;
+    background-repeat: no-repeat;
+    height:40em;
+   
+  }
