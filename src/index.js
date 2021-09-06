@@ -1,6 +1,7 @@
 const content = document.querySelector("#content");
 
 import createHomePage from "./homePage";
+import createMenuPage from "./menuPage";
 
 function createHead(){
     let homeLi = document.createElement("li");
@@ -46,11 +47,17 @@ function createHead(){
 }
 function start(){
     render(createHead());
-    render(createHomePage());
+    render(createHomePage());  
     let buttons = document.querySelectorAll(".navButton");
     buttons.forEach((item)=>{
         item.addEventListener("click", ()=>{
-            console.log(item.value);
+            if(item.value=="home"){
+                clear();
+                render(createHomePage());
+            } else if(item.value=="menu"){
+                clear();
+                render(createMenuPage());
+            }
         });
     });
     
@@ -58,6 +65,10 @@ function start(){
 function render(element){
     content.appendChild(element);
 
-};
+}
+function clear(){
+    let removal = content.children[3];
+    content.removeChild(removal);
+}
 
 start();
