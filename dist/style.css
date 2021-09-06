@@ -107,3 +107,39 @@ ul {
     height:40em;
    
   }
+  #contactPage{
+    display: flex;
+    background-color: rgb(217, 235, 250);
+    justify-content: space-around;
+    align-content: space-around;
+    width:75%;
+    height: 37em;
+    
+  }
+  #contactInfo{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #333;
+    border: rgb(149, 144, 224) 3px solid;
+    padding: 10px;
+    font-size: 17px;
+    margin-top: 10%;
+    height: 200px;
+    
+  }
+  #contactMap{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    overflow: hidden
+  }
+  #contactMap{
+    background-image: url("assets/location.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: #333 2px solid;
+    width:400px;
+    height:300px;
+    
+  }

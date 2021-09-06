@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/EmptyBox12/restaurant-page#readme",
   "devDependencies": {
+    "image-webpack-loader": "^7.0.1",
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.1.0"

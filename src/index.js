@@ -2,6 +2,7 @@ const content = document.querySelector("#content");
 
 import createHomePage from "./homePage";
 import createMenuPage from "./menuPage";
+import createContactPage from "./contactPage";
 
 function createHead(){
     let homeLi = document.createElement("li");
@@ -49,6 +50,7 @@ function start(){
     render(createHead());
     render(createHomePage());  
     let buttons = document.querySelectorAll(".navButton");
+    console.log(content.children);
     buttons.forEach((item)=>{
         item.addEventListener("click", ()=>{
             if(item.value=="home"){
@@ -57,6 +59,9 @@ function start(){
             } else if(item.value=="menu"){
                 clear();
                 render(createMenuPage());
+            } else if(item.value=="contact"){
+                clear();
+                render(createContactPage());
             }
         });
     });
@@ -67,7 +72,7 @@ function render(element){
 
 }
 function clear(){
-    let removal = content.children[3];
+    let removal = content.children[1];
     content.removeChild(removal);
 }
 
